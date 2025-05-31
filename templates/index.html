@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>야 너두 파이썬?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 야 너두 파이썬?</h1>
+
+        <div class="quiz-section">
+            <h2>문제</h2>
+            <pre id="python-code">{{ quiz.code }}</pre>
+
+            <h2>당신의 출력 예측</h2>
+            <textarea id="user-answer" placeholder="출력 결과를 입력하세요. 예: Hello, world!" rows="4"></textarea>
+
+            <button id="submit-btn">제출하기</button>
+
+            <div id="result-message"></div>
+        </div>
+    </div>
+
+    <!-- 정답을 JS에서 쓸 수 있도록 hidden input에 담음 -->
+    <input type="hidden" id="correct-answer" value="{{ quiz.answer }}">
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

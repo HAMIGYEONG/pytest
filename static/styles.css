@@ -1,0 +1,81 @@
+/* 전체 배경 및 폰트 설정 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3ffe5;  /* 연한 연두색 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 메인 박스 스타일 */
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffd1;  /* 연한 노란색 */
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* 상단 제목 */
+h1 {
+    text-align: center;
+    color: #5c8a00;  /* 진한 연두색 */
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+/* 섹션 제목 */
+.quiz-section h2 {
+    color: #666600;
+    font-size: 1.3rem;
+    margin: 20px 0 10px;
+}
+
+/* 문제 코드 박스 */
+#python-code {
+    background-color: #e7ffd9; /* 코드 박스 연두 */
+    border: 1px dashed #a3cc77;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* 학생 입력 박스 */
+#user-answer {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccc99;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fffff4;  /* 노랑 계열 배경 */
+    resize: vertical;
+}
+
+/* 제출 버튼 */
+#submit-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #bff773;  /* 버튼 연두 */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2f5e1c;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#submit-btn:hover {
+    background-color: #a9e95e;
+}
+
+/* 결과 메시지 */
+#result-message {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
